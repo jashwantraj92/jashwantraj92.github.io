@@ -395,16 +395,35 @@ function topFunction() {
 				</td>
 		<td >
             <h3 style="font-size:30px;">Address</h3>
-	<p>W340 Information Sciences and Technology Building,<br>
-	Pennsylvania State University, <br/>
-	University Park, <br />
-     PA - 16802, U.S.A. </span> <br />
+	<p>345 Park Ave, San Jose, CA 95110<br>
 	</p> </td>
+	<td>
+		// Initialize and add the map
+function initMap(): void {
+  // The location of Uluru
+  const uluru = { lat: -25.344, lng: 131.036 };
+  // The map, centered at Uluru
+  const map = new google.maps.Map(
+    document.getElementById("map") as HTMLElement,
+    {
+      zoom: 4,
+      center: uluru,
+    }
+  );
+
+  // The marker, positioned at Uluru
+  const marker = new google.maps.Marker({
+    position: uluru,
+    map: map,
+  });
+}
+			</td>
 	<td>
 	<h3 style="font-size:30px;">E-mail</h3>
     <A HREF="mailto:jashwant@psu.edu"> jashwant@psu.edu </A><br><br>
 
 	</tr></table>
+								
           
 					
 
